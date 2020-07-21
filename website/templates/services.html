@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Serviços - Hightech-AIRER{% endblock %}
+{% block content %}
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'website/images/bg_1.jpg' %});">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Serviços</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'home' %}">Início <i class="ion-ios-arrow-forward"></i></a></span> <span>Serviços <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+   
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Serviços</span>
+            <h2 class="mb-4">Porque escolher-nos?</h2>
+            <p>Com vastos anos de experiência, dispomos do “know-how” necessário e de colaboradores especializados para as suas necessidades.</p>
+          </div>
+        </div>
+  			<div class="row tabulation mt-4 ftco-animate">
+  				<div class="col-md-4">
+						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+						  <li class="nav-item text-left">
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"> Fornecimento e manutenção de equipamentos de
+								ar comprimido</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-2"> Consultoria
+								Planeamento e execução de linhas de ar comprimido e vácuo</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3"> Energias Renováveis
+								Projeto e instalação de sistemas solares
+								térmicos e fotovoltaicos</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4"> Remoção | Aplicação
+								Fibrocimento | Coberturas
+								Amianto
+								Cabi. de descontaminação</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-5"> HT-MARKT</a>
+						  </li>
+						  <!-- <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-6"><span class="flaticon-search-engine mr-2"></span> HT-MARKT</a>
+						  </li> -->
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<div class="tab-content">
+						  <div class="tab-pane container p-0 active" id="services-1">
+						  	<div class="img" style="background-image: url({% static 'website/images/service1.jpg' %});"></div>
+						  	<h3><a href="#">Fornecimento e manutenção de equipamentos de
+								ar comprimido</a></h3>
+						  	<p>Como distribuidores da Gardner-Denver e da Parker, a qualidade é algo que a Hightech não descuida. Fornecemos e executamos a manutenção a todo o tipo de equipamentos, como os mais variados tipos de compressores, 
+								  secadores, filtros e acessórios, com a garantia de qualidade destas marcas.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-2">
+						  	<div class="img" style="background-image: url({% static 'website/images/service2.png' %});"></div>
+						  	<h3><a href="#">Consultoria Planeamento e execução de linhas de ar comprimido e vácuo</a></h3>
+						  	<p>Com vários anos de experiência e a Parker-Transair como fornecedor, todas as linhas de ar comprimido e vácuo, sejam elas de natureza doméstica ou empresarial, ficarão em boas mãos. 
+								  A Transair comercializa dos melhores acessórios com uma qualidade imbatível, para que não existam fugas ou defeitos.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-3">
+						  	<div class="img" style="background-image: url({% static 'website/images/service3.jpg' %});"></div>
+						  	<h3><a href="#">Energias Renováveis
+								Projeto e instalação de sistemas solares
+								térmicos e fotovoltaicos</a></h3>
+						  	<p>Inovando neste campo, a Hightech oferece um serviço com qualidade e certezas de satisfação. Desde painéis solares e fotovoltaicos à energia geotérmica, 
+								  planeamos e executamos projetos adequados ao seu local. As instalações da Hightech já são totalmente amigas do ambiente, que espera?</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-4">
+						  	<div class="img" style="background-image: url({% static 'website/images/service4.jpg' %});"></div>
+						  	<h3><a href="#">Remoção | Aplicação
+								Fibrocimento | Coberturas
+								Amianto
+								Cabi. de descontaminação</a></h3>
+						  	<p>A Hightech é o seu parceiro de eleição neste sector. Removemos todo o tipo de cobertas em fibrocimento aplicando novas utilizando materiais de alta qualidade, 
+								  sempre respeitando as normativas em vigor. Construímos cabines de descontaminação de amianto. Não adie a remoção.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-5">
+						  	<div class="img" style="background-image: url({% static 'website/images/htmarktpage.png' %});"></div>
+						  	<h3><a href="#">HT-MARKT</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+    	</div>
+    </section>
+	<section class="department">
+		<div class="container">
+  
+		  <div class="row">
+  
+  
+			<div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+			  <a href="http://www.hightech-airer.pt/compressors/">
+			  <div class="icon-box icon-box-blue">
+				<!-- <div class="icon"><i class="bx bx-world"></i></div>
+				<h4 class="title"><a href="">Nemo Enim</a></h4> -->
+				<img src="{% static 'website/images/compressor.png' %}" class="img-fluid" alt="">
+				<p></p>
+				<p class="description">Comercializamos e executamos a manutenção a todos os equipamentos de ar comprimido e vácuo e respetivas linhas de transporte.</p>
+			  </div>
+			  </a>
+			</div>
+  
+			<div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+			  <a href="http://www.hightech-airer.pt/technologies/">
+			  <div class="icon-box icon-box-pink">
+				<img src="{% static 'website/images/technologies.png' %}" class="img-fluid" alt="">
+				<!-- <div class="icon"><i class="bx bxl-dribbble"></i></div> -->
+				<!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
+				<p></p>
+				<p class="description">Criada para o setor da construção, esta área é responsável pelas nossas construções metálicas e substituição de coberturas de amianto.</p>
+			  </div>
+			</a>
+			</div>
+  
+  
+			<div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+			  <a href="http://www.hightechmedical.pt/">
+			  <div class="icon-box icon-box-green">
+				
+				<!-- <div class="icon"><i class="bx bx-tachometer"></i></div>
+				<h4 class="title"><a href="">Magni Dolores</a></h4> -->
+				<img src="{% static 'website/images/medical.png' %}" class="img-fluid" alt="">
+				<p></p>
+				<p class="description">O nosso departamento médico, onde tentamos todos os dias trazer inovação ao nível da mobilidade reduzida e da área hospitalar.</p>
+			 
+			  </div>
+			</a>
+			</div>
+  
+  
+		  </div>
+  
+		</div>
+	  </section><!-- End Services Section -->
+
+  
+{% endblock %}

@@ -1,0 +1,11 @@
+Nome do contacto:
+{{ message_name }}
+
+Email:
+{{ message_email}}
+
+Assunto:
+{{ message_subject }}
+
+Mensagem:
+{{ message }}
