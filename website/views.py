@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import get_template  
-from django.template import Context 
+from django.template import Context
+from django.views.generic import ListView, DetailView 
+from .models import Oportunity
 
 
 def home(request):
@@ -53,5 +55,13 @@ def about(request):
 def services(request):
     return render(request, 'services.html', {})
 
-def oportunity(request):
-    return render(request, 'oportunity.html', {})
+# def oportunity(request):
+#     return render(request, 'oportunity.html', {})
+
+class oportunityView(ListView):
+    model = Oportunity
+    template_name = 'oportunity.html'
+
+class jobView(DetailView):
+    model = Oportunity
+    template_name = 'job.html'

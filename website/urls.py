@@ -1,10 +1,13 @@
 from django.urls import path
 from . import views
+from .views import oportunityView, jobView
 
 urlpatterns = [
    path('', views.home, name="home"),
    path('contact.html', views.contact, name="contact"),
    path('about.html', views.about, name="about"),
    path('services.html', views.services, name="services"),
-   path('oportunity.html', views.oportunity, name="oportunity"),
+   path('oportunity.html', oportunityView.as_view(), name="oportunity"),
+   path('job/<int:pk>', jobView.as_view(), name="job"),
+   # path('oportunity.html', views.oportunity, name="oportunity"),
 ]

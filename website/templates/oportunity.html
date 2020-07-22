@@ -28,126 +28,29 @@
           </div>
         </div>
         <div class="row oportunity">
-        	<div class="col-md-4">
-				
+			{% for oportunity in object_list %}
+        	<div class="col-md-4">				
         		<div class="project">
 					<!-- <div class="img rounded mb-4" style="background-image: url(images/project-1.jpg);"></div> -->
 					
         			<div class="text w-100 text-center">
-						<a href="http://www.hightech-airer.pt/compressors/">
-        				<span class="cat">Consulting</span>
+						<a href="{% url 'job' oportunity.pk %}">
+        				<span class="cat">{{oportunity.title}}</span>
         		
 					</div>
 					
 					<div class="text-oportunity">
 				
-						<p><b>Categoria de Trabalho:</b> teste</p>
-						<p><b>Horário de Trabalho:</b> Tempo inteiro</p>
-						<p><b>Localização:</b> Moita</p>
+						<p><b>Categoria de Trabalho:</b> {{oportunity.category}}</p>
+						<p><b>Horário de Trabalho:</b> {{oportunity.work_time}}</p>
+						<p><b>Localização:</b> {{oportunity.location}}</p>
 					</div>
 				
-				</div>
-				
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-					<!-- <div class="img rounded mb-4" style="background-image: url(images/project-1.jpg);"></div> -->
-					
-        			<div class="text w-100 text-center">
-						<a href="http://www.hightech-airer.pt/compressors/">
-        				<span class="cat">Consulting</span>
-        		
-					</div>
-					
-					<div class="text-oportunity">
-				
-						<p><b>Categoria de Trabalho:</b> teste</p>
-						<p><b>Horário de Trabalho:</b> Tempo inteiro</p>
-						<p><b>Localização:</b> Moita</p>
-					</div>
-				
-				</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-					<!-- <div class="img rounded mb-4" style="background-image: url(images/project-1.jpg);"></div> -->
-					
-        			<div class="text w-100 text-center">
-						<a href="http://www.hightech-airer.pt/compressors/">
-        				<span class="cat">Consulting</span>
-        		
-					</div>
-					
-					<div class="text-oportunity">
-				
-						<p><b>Categoria de Trabalho:</b> teste</p>
-						<p><b>Horário de Trabalho:</b> Tempo inteiro</p>
-						<p><b>Localização:</b> Moita</p>
-					</div>
-				
-				</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/project-4.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Audit &amp; Taxes</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/project-5.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Financing</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/project-6.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Real Estate</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
-
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/image_4.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Audit &amp; Taxes</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/image_5.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Financing</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="project">
-        			<!-- <div class="img rounded mb-4" style="background-image: url(images/image_6.jpg);"></div> -->
-        			<div class="text w-100 text-center">
-        				<span class="cat">Real Estate</span>
-        				<h3><a href="#">Consultacy Solutions</a></h3>
-        				<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-        			</div>
-        		</div>
-        	</div>
+				</div>				
+			</div>
+			{% endfor %}
+        	
+        	
         </div>
         
 			</div>
