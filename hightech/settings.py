@@ -121,7 +121,7 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'andredamaso96@gmail.com'
 EMAIL_HOST_PASSWORD = 'slb123asd'
