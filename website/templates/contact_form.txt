@@ -1,4 +1,4 @@
-Nome do contacto:
+Nome:
 {{ message_name }}
 
 Email:

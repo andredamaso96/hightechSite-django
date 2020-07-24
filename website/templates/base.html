@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{% static 'website/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
-    
+
     <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
@@ -73,15 +73,15 @@
 		  		<div class="row">
 			    	<div class="col">
 			    		<p class="social mb-0">
-			    			<a href="#"><i class="ion-logo-facebook"></i><span class="sr-only">Facebook</span></a>
-			    			<a href="#"><i class="ion-logo-twitter"></i><span class="sr-only">Twitter</span></a>
-			    			<a href="#"><i class="ion-logo-googleplus"></i><span class="sr-only">Googleplus</span></a>
+			    			<a href="https://www.facebook.com/hightechmoita/"><i class="ion-logo-facebook"></i><span class="sr-only">Facebook</span></a>
+			    			<!-- <a href="#"><i class="ion-logo-twitter"></i><span class="sr-only">Twitter</span></a> -->
+			    			<a href="https://plus.google.com/+HightechairerPtMoita"><i class="ion-logo-googleplus"></i><span class="sr-only">Googleplus</span></a>
 			    		</p>
 			    	</div>
 			    	<div class="col text-right">
-			    		<a href="#" style="color: blue;">Hightech Compressors</a>
-			    		<a href="#" style="color: red;">Hightech Technologies</a>
-			    		<a href="#" style="color: green;">Hightech Medical</a>
+			    		<a href="http://www.hightech-airer.pt/compressors/" style="color: blue;">Hightech Compressors</a>
+			    		<a href="http://www.hightech-airer.pt/technologies/" style="color: red;">Hightech Technologies</a>
+			    		<a href="http://www.hightechmedical.pt/" style="color: green;">Hightech Medical</a>
 			    	</div>
 			    </div>
 		  	</div>
@@ -134,10 +134,11 @@
               <div class="col-lg-3 col-md-6 footer-links">  
                 <h4>Links usáveis</h4>
                 <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="/">Início</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="/about">Sobre nós</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="/services">Serviços</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="/">HT-Markt</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Início</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}">Sobre nós</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'services' %}">Serviços</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'oportunity' %}">Oportunidades</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="https://www.htmarkt.hightech-airer.pt/">HT-Markt</a></li>
                   <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
                 </ul>
               </div>
@@ -145,9 +146,9 @@
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Serviços</h4>
                 <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="http://www.hightech-airer.pt/compressors/">Hightech Compressors</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="http://www.hightech-airer.pt/technologies/">Hightech Technologies</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="http://www.hightechmedical.pt/">Hightech Medical</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="http://www.hightech-airer.pt/compressors/">Hightech Compressors</a></li>
                 </ul>
               </div>
     
@@ -167,8 +168,8 @@
                 <h3>Hightech-ARIER, LDA</h3>
                 <p>Soluções industriais para o seu negócio.</p>
                 <div class="social-links mt-3">
-                  <a href="#" class="google"><i class="bx ion-logo-googleplus"></i></a>
-                  <a href="#" class="facebook"><i class="bx ion-logo-facebook"></i></a>
+                  <a href="https://www.facebook.com/hightechmoita/" class="google"><i class="bx ion-logo-googleplus"></i></a>
+                  <a href="https://plus.google.com/+HightechairerPtMoita" class="facebook"><i class="bx ion-logo-facebook"></i></a>
                   <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                   <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
                 </div>
@@ -210,8 +211,17 @@
       <script src="{% static 'website/js/main.js' %}"></script>
       <script src="{% static 'website/js/navbar.js' %}"></script>
       <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-      <script src="{% static 'website/plugins/php-email-form/validate.js' %}"></script>
-        
+      <!-- <script src="{% static 'website/plugins/php-email-form/validate.js' %}"></script> -->
+      <script src="{% static 'website/plugins/php-email-form/contactForm.js' %}"></script>
+      <!-- <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script> -->
+      <!-- <script src="{% static 'website/js/bootstrap-validate.js' %}"></script>
+      <script>
+         bootstrapValidate('#name', 'min:4:Por favor, digite pelo menos 4 caracteres')
+         bootstrapValidate('#email', 'email:Por favor, digite um email válido')
+         bootstrapValidate('#subject', 'min:4:Por favor, digite pelo menos 4 caracteres')
+         bootstrapValidate('#message', 'min:10:Por favor, digite pelo menos 10 caracteres')
+       </script> -->
+
       </body>
     </html>
 

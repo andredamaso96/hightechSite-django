@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contactos e Localização - Hightech-AIRER{% endblock %}
+{% block content %}
+
+
+    <center style="margin-top: 50px;">
+      <h2>Obrigado {{ first_name }}!</h2>
+      <p>Recebemos a sua candidatura e brevemente iremos responder-lhe...</p>
+      <p class="mb-0"><a href="{% url 'home' %}" class="btn btn-secondary py-3 px-4">Voltar à página inicial</a></p>
+    </center>
+    <br/><br/><br/>
+
+ 
+
+{% endblock %}

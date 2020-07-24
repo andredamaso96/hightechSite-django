@@ -9,5 +9,6 @@ urlpatterns = [
    path('services.html', views.services, name="services"),
    path('oportunity.html', oportunityView.as_view(), name="oportunity"),
    path('job/<int:pk>', jobView.as_view(), name="job"),
+   path('appointment.html', views.appointment, name="appointment"),
    # path('oportunity.html', views.oportunity, name="oportunity"),
 ]
