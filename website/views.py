@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, EmailMessage
 from django.conf import settings
 from django.template.loader import get_template  
@@ -47,7 +48,8 @@ def contact(request):
 
         # return render(request, 'contact.html', {'message_name': message_name})
         # return HttpResponse({'message_name': message_name})
-        return HttpResponse('')
+        #return HttpResponse('')
+        return HttpResponseRedirect(request.path)
         # return Http
     
     else:
