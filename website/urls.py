@@ -11,4 +11,5 @@ urlpatterns = [
    path('job/<int:pk>', jobView.as_view(), name="job"),
    path('appointment.html', views.appointment, name="appointment"),
    # path('oportunity.html', views.oportunity, name="oportunity"),
+   
 ]

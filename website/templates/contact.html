@@ -17,7 +17,7 @@
       </div>
     </section>
 
-    <div class="message_send">
+    <!-- <div class="message_send">
 
       <center>
         <h2>Obrigado!!</h2>
@@ -25,11 +25,11 @@
       </center>
       <br/><br/><br/>
 
-    </div>
-<!--     
+    </div> -->
+   
 
     {% if message_name %}
-    <center>
+    <center style="margin-top: 50px;">
       <h2>Obrigado {{ message_name }}!</h2>
       <p>Recebemos o seu Email e brevemente iremos responder-lhe...</p>
     </center>
@@ -71,33 +71,33 @@
         <div class="row block-9 justify-content-center mb-5">
           <div class="col-md-10 mb-md-5">
           	<h2 class="text-center">Se tiver alguma dúvida <br>por favor, não hesite em nos enviar uma mensagem</h2>
-            <form action="{% url 'contact' %}" method="post" class="border p-5 contact-form">
+            <form action="{% url 'contact' %}" method="post" class="border p-5">
               {% csrf_token %}
               <div class="form-group">
                 <input type="text" id="message_name" name="message_name" class="form-control" placeholder="Nome/Empresa" 
-                data-rule="minlen:4" data-msg="Por favor, digite pelo menos 4 caracteres">
+                data-rule="minlen:4" data-msg="Por favor, digite pelo menos 4 caracteres" required>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <input type="text" id="email" name="email" class="form-control" placeholder="Email" 
-                data-rule="email" data-msg="Por favor, digite um email válido">
+                data-rule="email" data-msg="Por favor, digite um email válido" required>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <input type="text" id="subject" name="subject" class="form-control" placeholder="Assunto"
-                 data-rule="minlen:4" data-msg="Por favor, digite pelo menos 4 caracteres">
+                 data-rule="minlen:4" data-msg="Por favor, digite pelo menos 4 caracteres" required>
                  <div class="validate"></div>
               </div>
               <div class="form-group">
                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" 
-                placeholder="Menssagem" data-rule="minlen:4" data-msg="Por favor, digite pelo menos 8 caracteres no assunto"></textarea>
+                placeholder="Menssagem" data-rule="minlen:4" data-msg="Por favor, digite pelo menos 8 caracteres no assunto" required></textarea>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <input type="submit" id="btn_submit" value="Enviar Mensagem" class="btn btn-primary py-3 px-5">
               </div>
-              <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
-              <div id="errormessage"></div>
+              <!-- <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
+              <div id="errormessage"></div> -->
             </form>
             
           </div>
@@ -114,8 +114,8 @@
 
 
       
-<!-- 
-      {% endif %} -->
+
+      {% endif %}
 
  
 
