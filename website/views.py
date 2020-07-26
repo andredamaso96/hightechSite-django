@@ -41,8 +41,8 @@ def contact(request):
         send_mail(
             "Novo contacto de email", # subject
             content, # message
-            "Site Hightech" + '', # from email
-            ['andredamaso96@gmail.com'], # to email
+            'hightech_site@outlook.com', # from email
+            ['hightech_site@outlook.com'], # to email
             fail_silently=False
         )
 
@@ -103,7 +103,7 @@ def appointment(request):
         content = txt.render(content)
 
 
-        email = EmailMessage("CANDIDATURA", content, "Site Hightech" + '', ['andredamaso96@gmail.com'])
+        email = EmailMessage("CANDIDATURA", content, 'hightech_site@outlook.com', ['hightech_site@outlook.com'])
         
         
         email.attach(file.name, file.read(), file.content_type)
