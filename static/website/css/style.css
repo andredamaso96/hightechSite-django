@@ -8235,16 +8235,21 @@ h1, h2, h3, h4, h5,
 
 /*top menu -------------------------------------------------------------------------------------------*/
 
-/* .top-social-menu .social a {
-  margin-right: 10px; } */
+ .top-social-menu .social a {
+  margin-right: 10px; } 
 
-.top-social-menu a {
-  margin-right: 10px; }
+ /* .top-social-menu a {
+  margin-right: 20px; }  */
 
 .top-social-menu .btn-link {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.4);
   text-decoration: underline; }
+
+.top-social-menu .linksite a{
+  margin-left: 35px;
+}
+
 
 .searchform {
   height: 54px;
@@ -8312,8 +8317,8 @@ h1, h2, h3, h4, h5,
     font-size: 14px;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-weight: 400;
     color: #fff;
     opacity: 1 !important; }

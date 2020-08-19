@@ -121,21 +121,18 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_PORT = 25
-# EMAIL_HOST_USER = 'andredamaso96@gmail.com'
-EMAIL_HOST_USER = 'hightech_site@outlook.com'
-# EMAIL_HOST_PASSWORD = 'slb123asd'
-EMAIL_HOST_PASSWORD = 'Pirata007?'
+EMAIL_HOST = config('EMAIL_HOST')
+# EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_PORT = config('EMAIL_PORT')
+#EMAIL_PORT = 25
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+# EMAIL_HOST_USER = 'hightech_site@outlook.com'
+# EMAIL_HOST_PASSWORD = 'Pirata007?'
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'sendgrid.backend.SendgridBackend'
-
-# SENDGRID_API_KEY = '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'
-# SENDGRID_SANDBOX_MODE_IN_DEBUG=False
-
 
 
 django_heroku.settings(locals())
