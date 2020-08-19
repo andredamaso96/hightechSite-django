@@ -8250,6 +8250,23 @@ h1, h2, h3, h4, h5,
   margin-left: 35px;
 }
 
+@media (max-width: 992px) {
+    
+  .top-social-menu .linksite{
+    flex-direction: row;
+  }
+
+}
+
+@media (max-width: 992px) {
+    
+    .top-social-menu .linksite a{
+      margin-left: 5px;
+    }
+  
+}
+
+
 
 .searchform {
   height: 54px;
