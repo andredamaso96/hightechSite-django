@@ -8252,19 +8252,13 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 992px) {
     
-  .top-social-menu .linksite{
-    flex-direction: row;
+  .top-social-menu .linksite a{
+    margin-left: 5px;
   }
 
 }
 
-@media (max-width: 992px) {
-    
-    .top-social-menu .linksite a{
-      margin-left: 5px;
-    }
-  
-}
+
 
 
 
